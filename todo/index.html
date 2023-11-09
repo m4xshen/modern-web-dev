@@ -2,22 +2,39 @@
 
 <html lang="en">
   <head>
-    <link href="./main.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
     <title>TODO</title>
   </head>
   <body>
-    <div class="background">
-      <h1 class="logo">TODO</h1>
-      <div class="todo-creator"></div>
+    <div class="card">
+      <div class="title">TODO</div>
+      <div class="horizon-card todo-creator">
+        <button class="checkbox add-button">+</button>
+        <input type="text" class="input" placeholder="Create a new todo ..." />
+      </div>
       <div class="todo-list">
-        <div class="todo"></div>
-        <div class="todo"></div>
-        <div class="todo"></div>
-        <div class="todo"></div>
-        <div class="todo"></div>
-        <div class="todo"></div>
+        <div class="horizon-card todo">
+          <button class="checkbox"></button>
+          <div class="name">Calculus HW2</div>
+        </div>
+        <div class="horizon-card todo">
+          <button class="checkbox"></button>
+          <div class="name">Side Project Figma</div>
+        </div>
+        <div class="horizon-card todo">
+          <button class="checkbox"></button>
+          <div class="name">Course Slide</div>
+        </div>
+        <div class="horizon-card todo finished">
+          <button class="checkbox"></button>
+          <div class="name">Write Blog Post</div>
+        </div>
+        <div class="horizon-card todo finished">
+          <button class="checkbox"></button>
+          <div class="name">Test</div>
+        </div>
       </div>
     </div>
   </body>
