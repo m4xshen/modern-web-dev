@@ -21,21 +21,37 @@ const todos = [
   },
 ];
 
-// this function receive array of objects
-// and return array of string
-// [
-//   "Calculus HW2 is still in progress.",
-//   "Side Project Figma is still in progress.",
-//   "Course Slide is still in progress.",
-//   "Write Blog Post is completed.",
-//   "Test is completed.",
-// ];
+function renderTodoList() {
+  const todoListElement = document.querySelector('.todo-list');
+  todoListElement.innerHTML = '';
 
-// try to not use if, for, while
-function getTodosStatus(todos) {
-  return todos.map((todo) => (
-    `${todo.name} is ${todo.done ? "completed" : "still in progress."}`
-  ));
+  for (let i = 0; i < todos.length; i++) {
+    const buttonElement = document.createElement('button');
+    buttonElement.classList.add('checkbox');
+
+    const nameElement = document.createElement('div');
+    nameElement.classList.add('name');
+    nameElement.append(todos[i].name);
+
+    const todoElement = document.createElement('div');
+    todoElement.classList.add('horizon-card', 'todo');
+    if (todos[i].done) {
+      todoElement.classList.add('finished');
+    }
+    todoElement.append(buttonElement, nameElement);
+
+    todoListElement.append(todoElement);
+  }
 }
 
-console.log(getTodosStatus(todos));
+function addTodo() {
+  const inputElement = document.querySelector('.input');
+  todos.unshift({
+    name: inputElement.value,
+    done: false
+  });
+  renderTodoList();
+  inputElement.value = '';
+}
+
+renderTodoList();
