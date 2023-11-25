@@ -21,6 +21,7 @@ const todos = [
   },
 ];
 
+// practice 1
 function renderTodoList() {
   const todoListElement = document.querySelector('.todo-list');
   todoListElement.innerHTML = '';
@@ -44,6 +45,7 @@ function renderTodoList() {
   }
 }
 
+// practice 2
 function addTodo() {
   const inputElement = document.querySelector('.input');
   todos.unshift({
