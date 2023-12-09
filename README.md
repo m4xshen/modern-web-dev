@@ -8,6 +8,9 @@
 - 11/23 Course 4
   - [Slide](https://hackmd.io/@m4xshen/B199qQvNp)
   - [Video](https://youtu.be/0Ioz5oVhpcw)
+- 12/09 Course 5
+  - [Slide](https://hackmd.io/@m4xshen/ryJ1kfoBp)
+  - [Video](https://youtu.be/c2CR7YF8te4?feature=shared)
 
 ## Links
 
