@@ -14,6 +14,9 @@
 - Course 6
   - [Slide](https://hackmd.io/@m4xshen/SJfD_S3I6)
   - [Video](https://youtu.be/TZzvWpI8vj4?feature=shared)
+- Course 7
+  - [Slide](https://hackmd.io/@m4xshen/HJAKG7knT)
+  - [Video](https://youtu.be/5Ytk6OqT2jY)
 
 ## Links
 
